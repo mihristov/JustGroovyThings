@@ -23,7 +23,7 @@ class Phrase {
     }
 
     public static void main(String[] args) {
-        def p = new Phrase("a:s,d'a masd bla bla")
+        def p = new Phrase("a:s,d'a masgjhd bla bla")
         p.print()
     }
 }
