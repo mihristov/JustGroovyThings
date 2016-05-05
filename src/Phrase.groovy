@@ -1,11 +1,8 @@
-/**
- * Created by xworks.admin on 5/5/2016.
- */
 class Phrase {
     def wordsMap = [:]
 
     Phrase(String input) {
-        input.split("[\\s.,:!&@\$%^*()_+]").each { word ->
+        input.split(/[\s.,:!&@\u0024%^*()_+]/).each { word ->
             def lowerWord = word.toLowerCase().trim()
             if (lowerWord)
                 wordsMap.put(lowerWord, wordsMap.containsKey(lowerWord) ? wordsMap.get(lowerWord) + 1 : 1)
